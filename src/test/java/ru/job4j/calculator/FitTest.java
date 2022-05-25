@@ -7,15 +7,15 @@ import static org.junit.Assert.*;
 public class FitTest {
 
     @Test
-    public void whenMan171Then81() {
-    short in = 171;
-    double expected = 81.65;
-    double out = Fit.manWeight(in);
-    assertEquals(expected, out, 0.01);
+    public void whenMan171Then81dot65() {
+        short in = 171;
+        double expected = 81.65;
+        double out = Fit.manWeight(in);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenWoman171Then70() {
+    public void whenWoman171Then70dot15() {
         short in = 171;
         double expected = 70.15;
         double out = Fit.womanWeight(in);
