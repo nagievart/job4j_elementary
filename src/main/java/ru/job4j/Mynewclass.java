@@ -2,7 +2,7 @@ package ru.job4j;
 
 public class Mynewclass {
     public static void main(String[] args) {
-        System.out.println("Хочу проверить, как новый класс загрузится в Git. Пока что никак.");
+        System.out.println("Хочу проверить, как новый класс загрузится в Git.");
         byte age = 29;
         char sex = 'm';
         float length = 1.7F;
