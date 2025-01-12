@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CounterTest {
 
     @Test
-    void WhenStart0Finish5Sum25() {
+    void whenStart0Finish5Sum25() {
         int start = 0;
         int finish = 5;
         int expected = 15;
@@ -17,7 +17,7 @@ class CounterTest {
     }
 
     @Test
-    void WhenStart0Finish1000Sum500500() {
+    void whenStart0Finish1000Sum500500() {
         int start = 0;
         int finish = 1000;
         int expected = 500500;
@@ -26,7 +26,7 @@ class CounterTest {
     }
 
     @Test
-    void WhenStart5Finish0Sum0() {
+    void whenStart5Finish0Sum0() {
         int start = 5;
         int finish = 0;
         int expected = 0;
@@ -35,7 +35,7 @@ class CounterTest {
     }
 
     @Test
-    void WhenStart0Finish10SumOfEven30() {
+    void whenStart0Finish10SumOfEven30() {
         int start = 0;
         int finish = 10;
         int expected = 30;
@@ -44,7 +44,7 @@ class CounterTest {
     }
 
     @Test
-    void WhenStart1Finish1SumOfEven0() {
+    void whenStart1Finish1SumOfEven0() {
         int start = 1;
         int finish = 1;
         int expected = 0;
@@ -53,11 +53,19 @@ class CounterTest {
     }
 
     @Test
-    void WhenStart10Finish1SumOfEven0() {
+    void whenStart10Finish1SumOfEven0() {
         int start = 10;
         int finish = 1;
         int expected = 0;
         int result = Counter.sumByEven(start, finish);
         assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void sum() {
+    }
+
+    @Test
+    void sumByEven() {
     }
 }
