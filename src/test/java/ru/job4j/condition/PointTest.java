@@ -7,35 +7,28 @@ class PointTest {
 
     @Test
     void distanceWhen00to20Then2() {
-        int x1 = 0;
-        int x2 = 0;
-        int y1 = 0;
-        int y2 = 2;
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
+        double output = a.distance(b);
         double expected = 2;
-        double output = Point.distance(x1, x2, y1, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void distanceWhen00to60Then6() {
-        int x1 = 0;
-        int x2 = 0;
-        int y1 = 0;
-        int y2 = 6;
+        Point a = new Point(0, 0);
+        Point b = new Point(6, 0);
+        double output = a.distance(b);
         double expected = 6;
-        double output = Point.distance(x1, x2, y1, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void distanceWhen15to64Then4Dot47() {
-        int x1 = 1;
-        int x2 = 6;
-        int y1 = 5;
-        int y2 = 4;
-        double expected = 4.47;
-        double output = Point.distance(x1, x2, y1, y2);
+    void distanceWhen15to64Then5Dot099() {
+        Point a = new Point(1, 5);
+        Point b = new Point(6, 4);
+        double output = a.distance(b);
+        double expected = 5.099;
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
-
 }
